@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{% block title %}Welcome{% endblock %} | ChatBack</title>
+
+    <link rel="stylesheet" href="{% static 'chatroom/css/bootstrap.min.css' %}">
+    <script src="{% static 'chatroom/js/jquery.min.js' %}"></script>
+    <script src="{% static 'chatroom/js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'chatroom/css/style.css' %}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+
+{% include 'chatroom/header.html' %}
+
+{% block main %}
+{% endblock %}
+
+</body>
+</html>
